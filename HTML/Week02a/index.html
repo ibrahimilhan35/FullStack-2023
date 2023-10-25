@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <!-- Below viewport settings are for mobile browsers -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GEOPHYSICO</title>
+
+    <!-- Link for icons: home, envelope, etc. -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- Local path for icons: home, envelope, etc. -->
+    <!-- <link rel="stylesheet" href="../../FontAwesome/fontawesome-free-6.4.2-web/css/all.min.css"> -->
+
+    <!--<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>-->
+    <script src="../../JS/Scripts/jQuery_3.7.1.js"></script>
+
+    <!-- You can add a link to your stylesheet here if needed -->
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <!-- Include the Header -->
+    <script>
+        $(function(){
+            // Load header.html and append it to the body
+            $("#header").load("header.html");
+
+            // Load footer.html and append it to the body
+            $("#footer").load("footer.html");
+        });
+    </script>
+
+    <div id="header"></div>
+
+<section>
+    <h3>
+        To get in touch with us or inquire about our services, please use the form below. We look forward to hearing from you!
+    </h3>
+
+    <!-- Form starts here -->
+    <!-- The action attribute specifies the URL where the form data will be sent.
+         You should replace "submit-form.php" with the actual URL or script that will process the form data on the server.-->
+    <!-- Form starts here -->
+    <form action="submit-form.php" method="post">
+        <label for="name"><i class="fas fa-user"></i>Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <label for="email"><i class="fas fa-envelope"></i>Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="message"><i class="fas fa-comment"></i>Message:</label>
+        <textarea id="message" name="message" placeholder="Enter your message" rows="4" required></textarea>
+
+        <input type="submit" value="Submit">
+    </form>
+    <!-- Form ends here -->
+    
+</section>
+
+
+    <!-- Include the Footer -->
+    <div id="footer"></div> 
+    
+</body>
+</html>

@@ -1,5 +1,5 @@
 /* Reset some default styles for better consistency across browsers */
-body, h1, h2, h3, p, ul, li, table {
+body, h1, h2, h3, p, ul, li {
     margin: 0;
     padding: 0;
 }
@@ -62,6 +62,14 @@ section {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Ensure child elements don't extend beyond the rounded corners */
+
+}
+
+/* Image Wrapper Styles */
+.image-wrapper {
+    border-radius: 8px;
+    overflow: hidden; /* Ensure the image doesn't extend beyond the rounded corners */
 }
 
 /* Image Styles */
@@ -75,6 +83,13 @@ section img {
 /* Form Section Styles */
 form {
     margin-top: 20px;
+    position: relative;
+    padding: 20px;
+    background-image: url("images/Geophysico-800x366.jpg"); /* Replace with the path to your background image */
+    background-size: contain; /* Play with contain and cover */
+    z-index: 1; /* Ensure the form is in front of the background image */
+    opacity: 0.9; /* Set the opacity for the form */
+    border-radius: 8px; /* Add border-radius for rounded corners */
 }
 
 label {
@@ -120,29 +135,6 @@ input[type="submit"]:hover {
     background-color: #555;
 }
 
-
-/* Table Styles */
-table {
-    width: 100%;
-    margin-top: 20px;
-    border-collapse: collapse;
-}
-
-th, td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: left;
-}
-
-th {
-    background-color: #f2f2f2;
-}
-
-/* YouTube Video Styles */
-iframe {
-    max-width: 100%;
-}
-
 /* Anchor Styles */
 a {
     color: #333;
@@ -174,3 +166,4 @@ footer {
 .footer-center a:hover, .footer-right a:hover {
     text-decoration: underline;
 }
+

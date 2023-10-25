@@ -66,6 +66,14 @@ section {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Image Styles */
+section img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Remove extra space below the image */
+    margin: 0 auto; /* Center the image within its container */
+}
+
 /* Form Section Styles */
 form {
     margin-top: 20px;
@@ -74,6 +82,8 @@ form {
 label {
     display: block;
     margin-bottom: 5px;
+    /* font-weight: bold; */ 
+    /* Make labels bold for consistency */
 }
 
 input[type="text"],
@@ -83,6 +93,11 @@ textarea {
     padding: 8px;
     margin-bottom: 10px;
     box-sizing: border-box;
+    border: 1px solid #ddd; /* Add a border for a cleaner look */
+    border-radius: 4px; /* Add border-radius for rounded corners */
+    font-size: 16px; /* Adjust font size to match the rest of the HTML */
+    outline: none; /* Remove the default focus border */
+
 }
 
 input[type="submit"] {
@@ -91,6 +106,20 @@ input[type="submit"] {
     padding: 10px 15px;
     cursor: pointer;
     border: none;
+    border-radius: 4px; /* Add border-radius for rounded corners */
+    font-size: 16px; /* Match the font size with the rest of the HTML */
+}
+
+/* Adjust placeholder style for consistency */
+input::placeholder, textarea::placeholder {
+    color: #777;
+    font-weight: normal; /* Remove bold style for placeholder text */
+    font-family: 'Arial', sans-serif; /* Set the desired font family */
+}
+
+/* Hover effect for the submit button */
+input[type="submit"]:hover {
+    background-color: #555;
 }
 
 /* Table Styles */
