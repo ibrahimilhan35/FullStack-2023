@@ -1,5 +1,4 @@
 // script.js
-
 document.addEventListener('DOMContentLoaded', function () {
     // Get the submit button element
     var submitButton = document.querySelector('.btn');
