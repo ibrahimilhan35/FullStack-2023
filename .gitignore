@@ -24,7 +24,6 @@ table.html
 problems_old.html
 services_old.html
 React/
-NodeJs/
 ExpressJs/Week12a
 ExpressJs/Week12b
 ExpressJs/Week12c
@@ -33,4 +32,6 @@ ExpressJs/node_modules
 ExpressJs/app.js
 ExpressJs/package-lock.json
 ExpressJs/package.json
-
+NodeJs/Week11/
+NodeJs/package.json
+NodeJs/server.js
